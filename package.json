@@ -9,7 +9,7 @@
   },
   "author": "myamout <matthew.yamout@gmail.com>",
   "scripts": {
-    "build": "webpack --optimize-minimize",
+    "build": "webpack",
     "build-watch": "webpack -w"
   },
   "license": "MIT",
