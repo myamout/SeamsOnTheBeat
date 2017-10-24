@@ -9915,7 +9915,7 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(365);
+__webpack_require__(366);
 
 /***/ }),
 /* 343 */
@@ -30153,12 +30153,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _Title = __webpack_require__(361);
 
-var _Bio = __webpack_require__(362);
-
-var _Song = __webpack_require__(363);
-
-var _Footer = __webpack_require__(364);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Layout = exports.Layout = function Layout() {
@@ -30166,57 +30160,9 @@ var Layout = exports.Layout = function Layout() {
         "div",
         null,
         _react2.default.createElement(
-            "div",
-            null,
-            _react2.default.createElement(
-                "div",
-                { className: "row" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "center" },
-                        _react2.default.createElement(_Title.Title, null)
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "row" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "center" },
-                        _react2.default.createElement(_Bio.Bio, null)
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "row" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-6" },
-                    _react2.default.createElement(_Song.Song, { song: "Live At Midway Thump", src: "https://www.mixcloud.com/widget/iframe/?feed=%2Fseth-abrams%2Flive-at-midway-thump-october-11%2F" })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-6" },
-                    _react2.default.createElement(_Song.Song, { song: "", src: "https://www.mixcloud.com/widget/iframe/?feed=%2Fseth-abrams%2Fmind-of-seams-vol-1%2F" })
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "row" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12" },
-                    _react2.default.createElement(_Footer.Footer, null)
-                )
-            )
+            "section",
+            { className: "hero is-dark is-medium is-bold" },
+            _react2.default.createElement(_Title.Title, null)
         )
     );
 };
@@ -30242,77 +30188,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Title = exports.Title = function Title() {
     return _react2.default.createElement(
         "div",
-        { className: "title" },
-        _react2.default.createElement(
-            "h1",
-            null,
-            " Seams On The Beat "
-        )
-    );
-};
-
-/***/ }),
-/* 362 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Bio = undefined;
-
-var _react = __webpack_require__(32);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Bio = exports.Bio = function Bio() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "p",
-            null,
-            " A bio will go here "
-        )
-    );
-};
-
-/***/ }),
-/* 363 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Song = undefined;
-
-var _react = __webpack_require__(32);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Song = exports.Song = function Song(props) {
-    return _react2.default.createElement(
-        "div",
         null,
         _react2.default.createElement(
             "div",
-            { className: "center" },
+            { className: "hero-body" },
             _react2.default.createElement(
                 "div",
-                { className: "card" },
+                { className: "container is-fluid" },
                 _react2.default.createElement(
-                    "div",
-                    { className: "card-container" },
-                    _react2.default.createElement("iframe", { width: "100%", height: "300", src: props.src, frameborder: "0" })
+                    "h1",
+                    { className: "title is-1" },
+                    "SEAMS On The Beat"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    { className: "subtitle" },
+                    " DJ From Columbus, Ohio, USA "
                 )
             )
         )
@@ -30320,65 +30211,17 @@ var Song = exports.Song = function Song(props) {
 };
 
 /***/ }),
-/* 364 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Footer = undefined;
-
-var _react = __webpack_require__(32);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Footer = exports.Footer = function Footer() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "div",
-            { className: "center" },
-            _react2.default.createElement(
-                "div",
-                { className: "footer" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "card" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "card-container" },
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            " ",
-                            _react2.default.createElement(
-                                "b",
-                                null,
-                                " If you'd like to contact Seams regarding future mixes or events, please send us an email at seamsonthebeat@gmail.com "
-                            ),
-                            " "
-                        )
-                    )
-                )
-            )
-        )
-    );
-};
-
-/***/ }),
-/* 365 */
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(366);
+var content = __webpack_require__(367);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -30386,7 +30229,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(368)(content, options);
+var update = __webpack_require__(369)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -30403,10 +30246,10 @@ if(false) {
 }
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(367)(undefined);
+exports = module.exports = __webpack_require__(368)(undefined);
 // imports
 
 
@@ -30417,7 +30260,7 @@ exports.push([module.i, ".card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\
 
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports) {
 
 /*
@@ -30499,7 +30342,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -30555,7 +30398,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(369);
+var	fixUrls = __webpack_require__(370);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -30871,7 +30714,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, exports) {
 
 
