@@ -30183,12 +30183,12 @@ var Layout = exports.Layout = function Layout() {
                     { className: "columns is-mobile" },
                     _react2.default.createElement(
                         "div",
-                        { className: "column is-mobile" },
+                        { className: "column is-6" },
                         _react2.default.createElement(_Bio.Bio, null)
                     ),
                     _react2.default.createElement(
                         "div",
-                        { className: "column is-mobile" },
+                        { className: "column is-6" },
                         _react2.default.createElement(_Contact.Contact, null)
                     )
                 )
@@ -30205,12 +30205,12 @@ var Layout = exports.Layout = function Layout() {
                     { className: "columns is-mobile" },
                     _react2.default.createElement(
                         "div",
-                        { className: "column" },
+                        { className: "column is-6" },
                         _react2.default.createElement(_Song.Song, { mixName: "Live At Midway Thump October 2017", mixUrl: "https://www.mixcloud.com/widget/iframe/?feed=%2Fseth-abrams%2Flive-at-midway-thump-october-11%2F" })
                     ),
                     _react2.default.createElement(
                         "div",
-                        { className: "column" },
+                        { className: "column is-6" },
                         _react2.default.createElement(_Song.Song, { mixName: "Live At Skully's Leboom October 2017", mixUrl: "https://www.mixcloud.com/widget/iframe/?feed=%2Fseth-abrams%2Flive-at-skullys-leboom-october-21-2017%2F" })
                     )
                 )
@@ -30345,7 +30345,7 @@ var Contact = exports.Contact = function Contact() {
                 _react2.default.createElement(
                     "h2",
                     { className: "is-size-1" },
-                    " Get In Touch "
+                    " Contact "
                 )
             ),
             _react2.default.createElement(
@@ -30354,7 +30354,20 @@ var Contact = exports.Contact = function Contact() {
                 _react2.default.createElement(
                     "p",
                     null,
-                    "Contact Info, etc"
+                    _react2.default.createElement(
+                        "strong",
+                        null,
+                        " Email "
+                    ),
+                    " ",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "icon is-small" },
+                        " ",
+                        _react2.default.createElement("i", { className: "fa fa-envelope aria-hidden=true" }),
+                        " "
+                    ),
+                    " seamsonthebeat@gmail.com"
                 )
             )
         )
@@ -30385,28 +30398,32 @@ var Song = exports.Song = function Song(props) {
         null,
         _react2.default.createElement(
             "div",
-            { className: "card is-capitalized has-text-weight-bold is-size-1" },
+            { className: "container is-fluid" },
             _react2.default.createElement(
                 "div",
-                { className: "card-header card-header-title" },
+                { className: "card is-capitalized has-text-weight-bold is-size-3" },
                 _react2.default.createElement(
-                    "h2",
-                    null,
-                    " ",
+                    "div",
+                    { className: "card-header card-header-title" },
                     _react2.default.createElement(
-                        "bold",
+                        "h2",
                         null,
                         " ",
-                        props.mixName,
+                        _react2.default.createElement(
+                            "bold",
+                            null,
+                            " ",
+                            props.mixName,
+                            " "
+                        ),
                         " "
-                    ),
-                    " "
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "card-content" },
+                    _react2.default.createElement("iframe", { width: "100%", height: "150", src: props.mixUrl, frameBorder: "0" })
                 )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "card-content" },
-                _react2.default.createElement("iframe", { width: "100%", height: "400", src: props.mixUrl, frameBorder: "0" })
             )
         )
     );
